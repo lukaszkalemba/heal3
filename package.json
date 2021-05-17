@@ -1,12 +1,29 @@
 {
   "name": "api",
   "private": true,
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node index.js"
+    "build": "ttsc",
+    "watch": "ttsc -w",
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukaszkalemba/heal3-api.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.32"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^15.3.0",
+    "@zerollup/ts-transform-paths": "^1.7.18",
+    "nodemon": "^2.0.7",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.2.4"
   }
 }
