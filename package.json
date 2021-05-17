@@ -1,0 +1,12 @@
+{
+  "name": "api",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaszkalemba/heal3-api.git"
+  }
+}
